@@ -1,0 +1,788 @@
+/* Default code Starts here */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-wrap: pretty;
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  /* background-color: rgb(239, 0, 88); */
+  /* font-family: "Merienda", serif; */
+  font-family: "'Work Sans', sans-serif";
+  font-family: "Roboto Serif", serif;
+  /* font-family: "Inter", serif; */
+  /* font-family: "Roboto Condensed", serif; */
+  /* font-family: "DM Serif Display", serif; */
+  line-height: 1.5;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  font-optical-sizing: auto;
+}
+
+button {
+  background-color: #1f94e6;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0rem;
+  cursor: pointer;
+  border: none;
+  /* border-radius: 0.5rem; */
+  padding: 1.5rem 2.5rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--secondaryColor);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+/* :::::SCROLL BAR CODE S T A R T S::::: */
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 1.5rem;
+  /* Vertical scrollbar */
+  height: 10px;
+  /* Horizontal scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #e3e4e6;
+  border-radius: 5px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #cececf;
+  /* border-radius: 5px; */
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b9b9ba;
+}
+
+/* :::::SCROLL BAR CODE E N D S::::: */
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+  /* text-wrap: balance; */
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --primaryColor: #4dc5f2;
+  --secondaryColor: #D71996;
+  --darkColor: #333333;
+  --lightColor: #1f94e6;
+  --regularFont: 1.6rem;
+  --headingFont: 2.5rem;
+  --ffPrimary: "Roboto", sans-serif;
+  --ffSecondary: "Work Sans", sans-serif;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0rem 2rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* padding: 0rem 0rem; */
+  /* gap: 1rem; */
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0rem 2rem;
+  gap: 1rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0rem 2rem;
+  gap: 1rem;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+  /* padding: 0rem 2rem; */
+  gap: 0rem;
+}
+
+.screenSize {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.screenSize1 {
+  max-width: 820px;
+  margin: auto;
+}
+
+.screenSize2 {
+  max-width: 1400px;
+  margin: auto;
+}
+.componentSpacing {
+  padding: 3rem 0rem;
+}
+.dflex {
+  display: flex;
+  /* without this wont work */
+  align-items: center;
+  /* top & bottom Alignment */
+  justify-content: center;
+  /* left & right Alignment */
+}
+
+.dflex-col {
+  display: flex;
+  flex-direction: column;
+  /* makes top to bottom align */
+  /* align-items: center; */
+  /* Behaves like a justify-content */
+  justify-content: center;
+  /* Behaves like a align-items */
+  text-align: center;
+}
+
+.dflex-start {
+  display: flex;
+  flex-direction: column;
+  /* makes top to bottom align */
+  align-items: center;
+  /* Behaves like a justify-content */
+  text-align: center;
+  justify-content: start;
+  /* left & right Alignment */
+}
+header {
+  /* background-color: #13c6bd; */
+  width: 100%;
+  /* Full Screensize */
+  height: auto;
+  /* content Height */
+}
+main {
+  /* background-color: #ffbf00; */
+  width: 100%;
+  height: auto;
+}
+footer {
+  /* background-color: #89f357; */
+  width: 100%;
+  height: auto;
+}
+span{
+  font-weight: bold;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4.5rem;
+  line-height: 5.1rem;
+  margin: 3rem 0rem;
+  font-weight: 700;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 3.8rem;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+  padding-bottom: 1rem;
+}
+.driving h4 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #3ac2f3;
+  padding-bottom: 0.8 rem;
+}
+h4 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #3ac2f3;
+  padding-bottom: 0.8 rem;
+}
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 550;
+  padding-bottom: 1.5rem;
+}
+h6 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 0rem;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1rem 0rem;
+}
+
+.navbarBox {
+  background-color: black;
+  color: white;
+  padding: 0rem;
+}
+.navbarBox button {
+  margin-left: 5rem;
+  /* padding: 0.7rem 2.5rem; */
+}
+
+.navbarLinkBox figure img {
+  width: auto;
+  height: 4rem;
+  margin-left: 6rem;
+}
+
+.linksBlock .hamburgerIcon {
+  font-size: 2.5rem;
+  color: gray;
+  display: none;
+}
+
+.linksBlock #icontoggle {
+  display: none;
+  cursor: pointer;
+}
+
+.headingBody h4 {
+  color: black;
+  padding-bottom: 3rem;
+}
+.linksBox ul {
+  display: flex;
+}
+
+.linksBox a {
+  padding-left: 3.5rem;
+  font-family: var(--ffSecondary);
+  font-size: 1.6rem;
+}
+
+.logoBody {
+  /* margin: 1rem 0rem; */
+  padding: 1rem 0rem;
+}
+
+.navbarContainer {
+  background-color: #f9f9f9;
+}
+
+.heroSection {
+  background: linear-gradient(90deg, rgb(20, 7, 7), transparent 0%), url(./assets/images/HeroImage_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0rem;
+}
+
+.heroSection p {
+  padding: 3rem 11rem 3rem 0rem;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 2rem 0rem;
+}
+
+.drivingBlock h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+}
+.emergingBody {
+  gap: 5rem;
+}
+
+.emergingBox {
+  padding-right: 5rem;
+}
+
+.emergrightBox {
+  padding: 0rem 2rem;
+}
+
+.needBody {
+  background-color: #14171a;
+  color: white;
+  /* padding: 2.5rem 0rem 2.5rem 7rem; */
+  padding: 2rem 8rem;
+  margin-top: 4rem;
+}
+
+.needBox p {
+  font-size: 2rem;
+  /* padding-right: 9rem; */
+}
+
+.featureBox button {
+  margin-top: 2rem;
+}
+
+/* .helpContainer {
+  padding: 0rem 0rem 0rem 8rem;
+} */
+
+.helpBlock {
+  background-color: #ececf3;
+}
+
+.helpBox {
+  padding: 10rem 10rem;
+}
+
+.optimizeBox {
+  padding: 7rem 9rem 0rem 15rem;
+}
+.transformBox {
+  padding: 3rem 17rem 0rem 9rem;
+}
+.automateBox {
+  padding: 6rem 9rem 0rem 15rem;
+}
+
+.automateBox p {
+  padding: 2.5rem 0rem;
+}
+.latest {
+  background-color: #F2F2F2;
+}
+.latestBox h3 {
+  padding: 4rem;
+}
+.latestViewBody li {
+  color: #D71996;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  padding: 2rem 0rem;
+}
+
+.latestViewBody h4 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  padding: 2rem 0rem;
+}
+
+.latestViewBody p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.3rem;
+  padding: 2rem 3rem 4rem 3rem;
+  line-height: 2.8rem;
+  text-align: center;
+}
+
+.latestBlogBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.latestCaseBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.latestBlogBox button {
+  margin-top: 2.7rem;
+  padding: 1.5rem 7rem;
+  font-size: 1.6rem;
+}
+
+.latestCaseBox button {
+  padding: 1.5rem 7rem;
+  font-size: 1.6rem;
+}
+
+.latestViewBody {
+  gap: 3rem;
+}
+
+.connect {
+  background: linear-gradient(90deg, rgb(1, 7, 7), transparent 0%), url(./assets/images/HeroImage_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 0rem;
+}
+.connectBox {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.connectBox h3 {
+  padding-bottom: 5rem;
+}
+.contact {
+  background-color: black;
+  color: white;
+}
+.contactLogoBox img {
+  height: auto;
+  width: 9rem;
+  margin-left: 0.5rem;
+  padding-top: 4rem;
+}
+.contactContainer{
+  padding: 0rem 2rem;
+}
+.contactBody {
+  /* gap: 0rem; */
+  margin: 5rem 0rem 3rem;
+  padding-bottom: 4rem;
+}
+.contactCopyBody p {
+  font-size: 1.4rem;
+  /* padding-left: 2rem; */
+}
+li {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+.stayBox i {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+}
+.privacy {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  padding-right: 2rem;
+}
+.privacy li {
+  padding-left: 2rem;
+}
+.email {
+  height: 5rem;
+  position: relative;
+  background-color: white;
+}
+.email button {
+  padding: 1rem 2rem;
+}
+.stayBox i{
+  padding-top:1rem;
+}
+@media (max-width:576px) {
+
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5 {
+    grid-template-columns: 1fr;
+    /* padding: 0rem 1rem; */
+  }
+
+  .linksBlock .hamburgerIcon {
+    display: block;
+    position: absolute;
+    font-size: 3rem;
+    top: 11rem;
+    right: 3rem;
+  }
+
+  .linksBox ul {
+    flex-direction: column;
+    display: none;
+    /* background-color: #1f94e6; */
+  }
+  #icontoggle:checked~.links {
+    display: flex;
+  }
+  .componentSpacing{
+    padding: 1rem 0rem;
+  }
+  .navbarBox{
+   padding: 0rem 0.5rem;
+   padding-bottom: 2rem;
+   
+ }
+ .navbarBox h6{
+  font-size: 1.6rem;
+ }
+  .navbarBox button {
+    /* margin: 0rem; */
+    padding: 1rem rem;
+    border-radius: 0.5rem;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  h2 {
+    font-size: 3.5rem;
+    padding-bottom: 2.5rem;
+    line-height: 2rem;
+  }
+  .navbarLinkBox {
+    margin: 1rem 0rem;
+  }
+  .navbarLinkBox figure img {
+    width: auto;
+    height: 5.5rem;
+    margin-left: 2rem;
+  }
+  .heroSection{
+    padding: 1rem 3.5rem;
+    background-color: #000000ad;
+  }
+  .heroSection p {
+    padding: 0rem;
+    padding-bottom: 0.5rem;
+    font-size: 2.5rem;
+  }
+   button
+  {
+    font-size: 2.3rem;
+    padding: 2.5rem 2.5rem;
+    font-size: 2.3rem;
+    margin-top: 1rem;
+  }
+  h1{
+    margin:0rem;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    padding-bottom: 2rem;
+  }
+  h3{
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+  }
+  h4{
+    font-size: 2.5rem;
+
+  }
+   p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    /* line-height: 3.5rem; */
+  }
+   .drivingContainer{
+   margin: 0rem 3rem;
+  }
+  .drivingBox h3{
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+  .headingBody h4{
+      padding-bottom: 2rem;
+  }
+  .emergingBody h4{
+    font-size: 2.5rem;
+  }
+  .emergingBox{
+    padding-right: 0rem;
+  }
+  .emergingBody{
+    gap: 0rem;
+  }
+  .emergingBody p{
+    line-height: 3.5rem;
+  }
+  .emergrightBox{
+    padding: 0rem;
+  }
+  .needBody{
+    padding: 0rem;
+    /* padding-right: 0rem; */
+  }
+  .needBox {
+    padding: 2rem 3rem;
+  }
+  .needBox p{
+    padding: 0rem;
+    font-size: 1.6rem;
+  }
+  .featureBox h3{
+    font-size: 3.5rem;
+  }
+  .helpContainer{
+    padding: 0rem;
+  }
+  .helpBox{
+    padding: 4rem;
+  }
+
+  .optimizeBox{
+    padding: 0rem 5rem;
+  }
+  .optimizeBox p{
+    font-size: 2.3rem
+  }
+  .optimizeBox button{
+    margin-bottom: 2rem;
+  }
+  .transformBox{
+    padding: 0rem 5rem;
+  }
+   .transformBox p{
+    font-size: 2.3rem
+  }
+    .automateBox{
+    padding: 0rem 5rem;
+  }
+   .automateBox p{
+    font-size: 2.3rem
+  }
+  .automateBox button{
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  
+  }
+  .latestCaseBox{
+    padding: 0rem 1rem;
+  }
+
+  .latestViewBody
+  {
+    margin: 0rem 2rem;
+  }
+  .latestViewBody h4{
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  .latestViewBody button{
+    font-size: 2.5rem;
+   margin-top: 0rem;
+   padding: 1rem 5rem;
+  }
+  .latestViewBody p{
+    font-size: 2rem;
+  }
+  .latestViewBody li{
+    font-size: 2rem;
+  }
+  .connectBox{
+    padding: 4rem;
+    text-align: center;
+  }
+  .connectBox h3{
+    padding-bottom: 1rem;
+  }
+  .connectBox button{
+    padding: 1rem 2.5rem;
+  }
+  .contactContainer{
+    margin:0rem  3rem ;
+  }
+ .contactBody li{
+  font-size: 2rem;
+ }
+
+ .email button{
+  margin-left: 8rem;
+  padding: 1rem 2rem 0.5rem;
+ }
+ .privacy li{
+  font-size: 1.6rem;
+ }
+  h5{
+    font-size: 2.3rem;
+  }
+  .contact h5{
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+  .newsletterBox p{
+    font-size: 2.3rem;
+  }
+  .contactCopyBox P,li{
+    font-size: 1.6rem;
+  }
+  .contactCopyBox{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+   .contactPrivacyBox{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .contactLogoBox img{
+    width: auto;
+  }
+
+}
